@@ -52,5 +52,27 @@ public class BinarySearchTree {
 				
 		}
 	}
+	
+	/*
+	 * if root = null return false
+	 * temp = root
+	 * while temp!= null
+	 * if < go left else if> go right
+	 * else return true;
+	 * for loop is needed when we know how many steps to iterate through else use while loop
+	 */
+	public boolean contains(int value) {
+		if(root == null) return false;
+		Node temp = root;
+		while(temp!=null) {
+			if(value<temp.value) {
+				temp = temp.left;
+			}else if(temp.value>value) {
+					temp=temp.right;
+				}else
+					return true;
+			}
+		return false;
+	}
 
 }

@@ -15,6 +15,7 @@ public class BinarySearchTreeMain {
 		bst.insert(86);
 		
 		System.out.println(bst.root.left.right.value);
+		System.out.println("result of contains method: " +bst.contains(18));
 	}
 	
 }
