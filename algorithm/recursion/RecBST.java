@@ -46,4 +46,18 @@ public class RecBST {
 			
 		return currentNode;
 	}
+	
+	public int minValue(Node currentNode) {
+		if(currentNode.left!=null) {
+			currentNode = currentNode.left;
+		}
+		return currentNode.value;
+	}
+	
+	public int maxValue(Node currentNode) {
+		if(currentNode.right!=null) {
+			currentNode = currentNode.right;
+		}
+		return currentNode.value;
+	}
 }

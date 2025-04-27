@@ -2,6 +2,8 @@ package recursion;
 
 import java.util.Scanner;
 
+import recursion.RecBST.Node;
+
 
 public class RecBSTMain {
 
@@ -29,6 +31,10 @@ public class RecBSTMain {
 		boolean result = bst.rContains(n);
 		System.out.println("Node contains value =  " + result);
 		sc.close();
+		
+		System.out.println("Min value of root: " + bst.minValue(bst.root) );
+		System.out.println("Min value from root: " + bst.minValue(bst.root.left) );
+		System.out.println("Max value from root: " + bst.maxValue(bst.root.right) );
 
 	}
 
