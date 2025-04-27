@@ -1,6 +1,6 @@
 package treetraversal;
 
-public class DepthFirstSearch {
+public class DepthFirstSearchBSTMain {
 	public static void main(String[] args) {
 		DepthFirstSearchBST dfs = new DepthFirstSearchBST();
 		
@@ -13,6 +13,7 @@ public class DepthFirstSearch {
 		dfs.insert(86);
 		
 		System.out.println("DFS PreOrder Traverse: " + dfs.DFSPreOrder());
+		System.out.println("DFS PostOrder Traverse: " + dfs.DFSPostOrder());
 	}
 
 }
