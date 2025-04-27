@@ -14,6 +14,7 @@ public class DepthFirstSearchBSTMain {
 		
 		System.out.println("DFS PreOrder Traverse: " + dfs.DFSPreOrder());
 		System.out.println("DFS PostOrder Traverse: " + dfs.DFSPostOrder());
+		System.out.println("DFS PostOrder Traverse: " + dfs.DFSInOrder());
 	}
 
 }
