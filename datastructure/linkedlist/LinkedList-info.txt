@@ -1,0 +1,3 @@
+Linkedlist is not in contiguous memory locations, they are scattered.
+Linkedlist doesn't work with index unlike arraylist.
+
