@@ -1,0 +1,18 @@
+Floyd's Tortoise and Hare algorithm (to find middle node of LL without length):
+https://leetcode.com/discuss/post/1116359/intro-to-floyds-cycle-detection-algorith-mibn/
+
+Overview
+The cycle detection problem is to find the cycle in a sequence, and Floyd’s cycle detection algorithm, aka Tortoise and Hare algorithm, is a two-pointer algorithm to detect the cycle and locate the start of the cycle as well.
+
+
+
+Detect the cycle
+Assuming there are a hare and a tortoise at the beginning and the hare moves 2 steps at one time while the tortoise moves 1 step. If there’s a cycle in the sequence, they will meet finally at some point. OR if there's no such a cycle, they will both reach the end.
+
+Where does the cycle begin?
+Firstly, we put the hare and the tortoise at the start. Similarly, the hare moves 2 steps at a time while the tortoise moves 1 step. Assuming they meet after i iterations, the length of the non-cyclic part is m, perimeter of the cycle is n, and the distance between the beginning of the cycle to the place they meet is k, we have:
+
+Refer attached image: Floyd-Hare-Tortoise-algo.png
+
+i=m+an+k. a is a non-negative integer representing the number of loops that tortoise traveled, and i is also the distance that the tortoise moved.
+2*i=m+bn+k. b is another non-negative integer representing the number of loops that hare traveled, and 2∗i is the distance that the hare moved.
