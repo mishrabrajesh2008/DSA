@@ -1,7 +1,7 @@
 package doublylinkedlist;
 
 public class DLLMain {
-	
+
 	public static void main(String[] args) {
 		DoublyLinkedList dll = new DoublyLinkedList(7);
 		dll.append(9);
@@ -9,6 +9,8 @@ public class DLLMain {
 		dll.append(19);
 		dll.printAll();
 		dll.removeLast();
+		dll.prepend(5);
+		dll.removeFirst();
 		dll.printAll();
 	}
 
