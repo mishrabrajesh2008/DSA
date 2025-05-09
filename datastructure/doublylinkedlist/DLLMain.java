@@ -10,8 +10,11 @@ public class DLLMain {
 		dll.printAll();
 		dll.removeLast();
 		dll.prepend(5);
+		dll.prepend(8);
+		dll.prepend(2);
 		dll.removeFirst();
 		dll.printAll();
+		System.out.println("Output of get: " + dll.get(3).value);
 	}
 
 }
