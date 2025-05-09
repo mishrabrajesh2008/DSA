@@ -8,6 +8,8 @@ public class DLLMain {
 		dll.append(11);
 		dll.append(19);
 		dll.printAll();
+		dll.removeLast();
+		dll.printAll();
 	}
 
 }
