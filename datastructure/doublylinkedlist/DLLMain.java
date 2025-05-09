@@ -15,6 +15,8 @@ public class DLLMain {
 		dll.removeFirst();
 		dll.insert(2, 24);
 		dll.printAll();
+		dll.remove(3);
+		dll.printAll();
 		System.out.println("Output of get: " + dll.get(3).value);
 		System.out.println(dll.set(3, 10));
 
