@@ -1,6 +1,6 @@
 package linkedlist_leetcode;
 
-public class PartitionList {
+public class PartitionListLL {
 	
 	private Node head;
     private int length;
@@ -14,7 +14,7 @@ public class PartitionList {
         }
     }
 
-    public PartitionList(int value) {
+    public PartitionListLL(int value) {
         Node newNode = new Node(value);
         head = newNode;
         length = 1;
@@ -94,7 +94,7 @@ public class PartitionList {
 
 	
 	public static void main(String[] args) {
-		PartitionList ll = new PartitionList(3);
+		PartitionListLL ll = new PartitionListLL(3);
         ll.append(5);
         ll.append(8);
         ll.append(10);

@@ -1,6 +1,6 @@
 package linkedlist_leetcode;
 
-public class ReverseBetween {
+public class ReverseBetweenLL {
 	
 	private Node head;
     private int length;
@@ -14,7 +14,7 @@ public class ReverseBetween {
         }
     }
 
-    public ReverseBetween(int value) {
+    public ReverseBetweenLL(int value) {
         Node newNode = new Node(value);
         head = newNode;
         length = 1;
@@ -89,7 +89,7 @@ public class ReverseBetween {
 	
 	
 	public static void main(String[] args) {
-		ReverseBetween rbt = new ReverseBetween(5);
+		ReverseBetweenLL rbt = new ReverseBetweenLL(5);
 		rbt.append(4);
 		rbt.append(18);
 		rbt.append(12);

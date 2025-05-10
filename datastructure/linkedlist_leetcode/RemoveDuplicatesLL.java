@@ -9,7 +9,7 @@ import java.util.Set;
  * Read about Floyd's Tortoise and Hare algorithm 
  * */
 
-public class RemoveDuplicates {
+public class RemoveDuplicatesLL {
 	private Node head;
 	// private Node tail;
 	private int length;
@@ -23,7 +23,7 @@ public class RemoveDuplicates {
 		}
 	}
 
-	public RemoveDuplicates(int value) {
+	public RemoveDuplicatesLL(int value) {
 		Node newNode = new Node(value);
 		head = newNode;
 		length = 1;
@@ -122,7 +122,7 @@ public class RemoveDuplicates {
 	}
 
 	public static void main(String[] args) {
-		RemoveDuplicates myList = new RemoveDuplicates(2);
+		RemoveDuplicatesLL myList = new RemoveDuplicatesLL(2);
 		myList.append(4);
 		myList.append(7);
 		myList.append(7);
