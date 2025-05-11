@@ -3,7 +3,7 @@ package doublylinkedlist_leetcode;
 public class ReverseBetweenDLL {
 
 	private Node head;
-	// private int length;
+	private int length;
 
 	class Node {
 		int value;
@@ -22,6 +22,10 @@ public class ReverseBetweenDLL {
 
 	public Node getHead() {
 		return head;
+	}
+	
+	public int getLength() {
+		return length;
 	}
 
 	public void printList() {

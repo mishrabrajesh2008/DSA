@@ -1,5 +1,7 @@
 package doublylinkedlist_leetcode;
 
+// this class needs to be worked out still
+
 public class SwapNodePairDLL {
 	
 
@@ -23,6 +25,10 @@ public class SwapNodePairDLL {
 
     public Node getHead() {
         return head;
+    }
+    
+    public int getLength() {
+        return length;
     }
 
     public void printList() {
