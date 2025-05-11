@@ -1,6 +1,6 @@
 package linkedlist_leetcode;
 
-public class SwapNodePair {
+public class SwapNodePairLL {
 
 	private Node head;
 	private int length;
@@ -14,7 +14,7 @@ public class SwapNodePair {
 		}
 	}
 
-	public SwapNodePair(int value) {
+	public SwapNodePairLL(int value) {
 		Node newNode = new Node(value);
 		head = newNode;
 		length = 1;
@@ -85,7 +85,7 @@ public class SwapNodePair {
 
 	public static void main(String[] args) {
 		System.out.println("Test 1: Even number of nodes");
-		SwapNodePair ll1 = new SwapNodePair(1);
+		SwapNodePairLL ll1 = new SwapNodePairLL(1);
 		ll1.append(2);
 		ll1.append(3);
 		ll1.append(4);
@@ -96,7 +96,7 @@ public class SwapNodePair {
 		ll1.printList();
 
 		System.out.println("\nTest 2: Odd number of nodes");
-		SwapNodePair ll2 = new SwapNodePair(1);
+		SwapNodePairLL ll2 = new SwapNodePairLL(1);
 		ll2.append(2);
 		ll2.append(3);
 		ll2.append(4);
@@ -108,7 +108,7 @@ public class SwapNodePair {
 		ll2.printList();
 
 		System.out.println("\nTest 3: Single node");
-		SwapNodePair ll3 = new SwapNodePair(1);
+		SwapNodePairLL ll3 = new SwapNodePairLL(1);
 		System.out.print("BEFORE: ");
 		ll3.printList();
 		ll3.swapPairs();
@@ -116,7 +116,7 @@ public class SwapNodePair {
 		ll3.printList();
 
 		System.out.println("\nTest 4: Empty list");
-		SwapNodePair ll4 = new SwapNodePair(1);
+		SwapNodePairLL ll4 = new SwapNodePairLL(1);
 		ll4.makeEmpty();
 		System.out.print("BEFORE: ");
 		ll4.printList();
@@ -125,7 +125,7 @@ public class SwapNodePair {
 		ll4.printList();
 
 		System.out.println("\nTest 5: Two nodes");
-		SwapNodePair ll5 = new SwapNodePair(1);
+		SwapNodePairLL ll5 = new SwapNodePairLL(1);
 		ll5.append(2);
 		System.out.print("BEFORE: ");
 		ll5.printList();
