@@ -2,7 +2,7 @@ package stacknqueues_leetcode;
 
 import java.util.ArrayList;
 
-public class StackPush<T> {
+public class StackPop<T> {
 
 	private ArrayList<T> stackList = new ArrayList<>();
 
@@ -36,11 +36,19 @@ public class StackPush<T> {
 		stackList.add(value);
 	}
 
+	public T pop() {
+		if (isEmpty())
+			return null;
+		return stackList.remove(stackList.size() - 1);
+	}
+
 	public static void main(String[] args) {
-		StackPush<Integer> spt = new StackPush<Integer>();
-		spt.push(10);
-		spt.push(11);
-		spt.printStack();
+		StackPop<Integer> sp = new StackPop<Integer>();
+		sp.push(11);
+		sp.push(15);
+		sp.pop();
+		sp.printStack();
+
 	}
 
 }
