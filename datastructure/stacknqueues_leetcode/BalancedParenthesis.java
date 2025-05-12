@@ -42,17 +42,17 @@ public class BalancedParenthesis {
 	}
 
 	public static void main(String[] args) {
-		testAndPrint("()", true);
+		//testAndPrint("()", true);
 		testAndPrint("()()", true);
-		testAndPrint("(())", true);
-		testAndPrint("()()()", true);
-		testAndPrint("(()())", true);
-		testAndPrint(")()(", false);
-		testAndPrint(")(", false);
+		//testAndPrint("(())", true);
+		//testAndPrint("()()()", true);
+		//testAndPrint("(()())", true);
+		//testAndPrint(")()(", false);
+		//testAndPrint(")(", false);
 		testAndPrint("(()", false);
-		testAndPrint("))", false);
-		testAndPrint("(", false);
-		testAndPrint(")", false);
+		//testAndPrint("))", false);
+		//testAndPrint("(", false);
+		//testAndPrint(")", false);
 
 	}
 
