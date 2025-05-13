@@ -1,0 +1,13 @@
+A tree is :
+
+Full: every node either points to zero or 2 nodes.
+
+Perfect: every node is completelly filled all the way across.
+
+Complete: if filling tree from left to right
+
+There is no rule that a tree has to be binary tree
+
+Every node can only have one parent
+
+A binary search tree has all node on right is greater then parent and all nodes on left is lesser than parent.

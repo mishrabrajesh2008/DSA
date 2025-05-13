@@ -8,6 +8,7 @@ public class SwapNodePairLL {
 	class Node {
 		int value;
 		Node next;
+		Node prev;
 
 		Node(int value) {
 			this.value = value;
@@ -66,21 +67,32 @@ public class SwapNodePairLL {
 	}
 
 	public void swapPairs() {
-		Node D1 = new Node(0);
-		D1.next = head;
-		Node temp = head;
-		Node prev = D1;
-		// Node current = temp.next;
+		Node dummyNode = new Node(0);
+		dummyNode.next = head;
+		Node previousNode = dummyNode;
 
-		while (temp != null && temp.next != null) {
-			Node current = temp.next;
-			prev.next = current;
-			temp.next = current.next;
-			current.next = temp;
-			prev = temp;
-			temp = temp.next;
+		while (head != null && head.next != null) {
+			Node firstNode = head;
+			Node secondNode = head.next;
+
+			previousNode.next = secondNode;
+			firstNode.next = secondNode.next;
+			secondNode.next = firstNode;
+
+			secondNode.prev = previousNode;
+			firstNode.prev = secondNode;
+
+			if (firstNode.next != null) {
+				firstNode.next.prev = firstNode;
+			}
+
+			head = firstNode.next;
+			previousNode = firstNode;
 		}
-		head = D1.next;
+
+		head = dummyNode.next;
+		if (head != null)
+			head.prev = null;
 	}
 
 	public static void main(String[] args) {
