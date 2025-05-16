@@ -1,6 +1,7 @@
 Putting multiple key-value pair at same address is called Separate Chaining
 
 
-Putting multiple key-value pair at next vacant address is called Linear probing. It is one way of Open addressing.\
+Putting multiple key-value pair at next vacant address is called Linear probing. It is one way of Open addressing.
 
 These both approaches are ways of dealing with collission.
+
