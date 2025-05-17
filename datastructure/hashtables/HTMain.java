@@ -17,6 +17,8 @@ public class HTMain {
 
         System.out.println("\nBolts:");
         System.out.println( myHashTable.get("bolts") );
+        
+        System.out.println( myHashTable.keys() );
 	}
 	
 
