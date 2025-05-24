@@ -3,7 +3,7 @@ package hashtables_leetcode;
 import java.util.HashSet;
 import java.util.Set;
 
-public class HasUniqueChars {
+public class HasUniqueCharsSet {
 
 	public static boolean hasUniqueChars(String string) {
 
