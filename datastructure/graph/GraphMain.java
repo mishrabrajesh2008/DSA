@@ -6,14 +6,35 @@ public class GraphMain {
 		Graph myGraph = new Graph();
 
 		myGraph.addVertex("A");
-		myGraph.addVertex("B");
+        myGraph.addVertex("B");
+        myGraph.addVertex("C");
+        myGraph.addVertex("D");
 
-		System.out.println("Graph:");
-		myGraph.printGraph();
+        myGraph.addEdge("A", "B");
+        myGraph.addEdge("A", "C");
+        myGraph.addEdge("A", "D");
+        myGraph.addEdge("B", "D");
+        myGraph.addEdge("C", "D");
 
-		/*
-		 * EXPECTED OUTPUT: ---------------- Graph: {A=[], B=[]}
-		 * 
-		 */
+
+        System.out.println("Graph before removeVertex():");
+        myGraph.printGraph();
+
+        myGraph.removeVertex("D");
+
+        System.out.println("\nGraph after removeVertex():");
+        myGraph.printGraph();
+        
+        /*
+            EXPECTED OUTPUT:
+            ----------------
+            Graph before removeVertex():
+            {A=[B, C, D], B=[A, D], C=[A, D], D=[A, B, C]}
+            
+            Graph after removeVertex():
+            {A=[B, C], B=[A], C=[A]}
+
+        */
+
 	}
 }
