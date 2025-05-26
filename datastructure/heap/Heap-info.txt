@@ -1,0 +1,14 @@
+In a heap,
+	each node is greater then it's descendents
+	there is no order of nodes.
+	can contain duplicates.
+	it's always complete
+
+Max heap will have maximum value at root, while mean heap will have mean value at root.
+
+
+leftChild = 2*parentIndex
+rightChild = 2*parentIndex+1
+
+
+parentIndex = integer division by child node.
