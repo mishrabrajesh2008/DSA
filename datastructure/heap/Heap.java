@@ -58,8 +58,8 @@ public class Heap {
 	public void sinkDown(int index) {
 		int maxIndex = index;
 		while (true) {
-			int leftIndex = leftChild(maxIndex);
-			int rightIndex = rightChild(leftIndex);
+			int leftIndex = leftChild(index);
+			int rightIndex = rightChild(index);
 			if (leftIndex < heap.size() && heap.get(maxIndex) < heap.get(leftIndex)) {
 				maxIndex = leftIndex;
 			}
