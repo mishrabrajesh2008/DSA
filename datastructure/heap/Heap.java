@@ -32,16 +32,17 @@ public class Heap {
 		heap.set(index1, heap.get(index2));
 		heap.set(index2, temp);
 	}
-
+	
 	public void insert(int value) {
-		heap.add(value);
-		int current = heap.size() - 1;
-		while (current > 0 && heap.get(current) < parent(current)) {
-			swap(heap.get(current), parent(current));
-			current = parent(current);
-		}
-	}
+        heap.add(value);
+        int current = heap.size() - 1;
 
+        while (current > 0 && heap.get(current) > heap.get(parent(current))) {
+            swap(current, parent(current));
+            current = parent(current);
+        }
+    }
+	
 	public void minHeapInsert(int value) {
 
 		heap.add(value);
@@ -52,15 +53,19 @@ public class Heap {
 		}
 	}
 
-	public Integer remove(){
-        if(heap.size()==0) return null;
-        if(heap.size()==1) {
+	public Integer remove() {
+        if (heap.size() == 0) {
+            return null;
+        }
+
+        if (heap.size() == 1) {
             return heap.remove(0);
         }
+
         int maxValue = heap.get(0);
-        heap.set(0, heap.remove(heap.size()-1));
+        heap.set(0, heap.remove(heap.size() - 1));
         sinkDown(0);
-        
+
         return maxValue;
     }
 	
