@@ -32,7 +32,23 @@ public class HeapMain {
             [75, 60, 65, 55, 50]
 
         */
+        Heap myHeap1 = new Heap();
+        myHeap1.minHeapInsert(99);
+        myHeap1.minHeapInsert(72);
+        myHeap1.minHeapInsert(61);
+        myHeap1.minHeapInsert(58);
+        System.out.println(myHeap1.getHeap());
+        myHeap1.minHeapInsert(10);
+        myHeap1.minHeapInsert(75);
+        System.out.println(myHeap1.getHeap());
 
+        Integer removedValue1 = myHeap1.minHeapRemove();
+
+        System.out.println("First Removed Value: " + removedValue1);
+        Integer removedValue2 = myHeap1.minHeapRemove();
+
+        System.out.println("Second Removed Value: " + removedValue2);
+        System.out.println(myHeap1.getHeap());
 	}
 
 }
