@@ -2,7 +2,6 @@ package recursion;
 
 import java.util.Scanner;
 
-import recursion.RecBST.Node;
 
 
 public class RecBSTMain {
